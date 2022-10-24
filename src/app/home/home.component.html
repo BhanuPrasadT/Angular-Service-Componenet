@@ -1,0 +1,37 @@
+<p>home works!</p>
+{{a}}<br>
+{{b}}<br>
+
+<input type="text" [(ngModel)]="name"><br>
+<input type="button" value="Print the value from text box" (mouseover)="printdata()"><br>
+
+Constructor : Document.GetElemetByID Test;
+<input type="text" id="doctest"><br>
+
+<span *ngIf="status else condition1">condition is true</span>
+<ng-template #condition1>condition value is false</ng-template>
+<br>
+for lopp data:<br>
+<div *ngFor= 'let mobile for mobiles'>{{mobiles}}</div>div>
+<br>
+upper case:{{name1 | uppercase }}<br>
+lower case:{{name2 | lowercase }}<br>
+date : {{todaydate}}<br>
+short date : {{todaydate | date:'d/m/y'}}<br>
+currency : {{money | currency:'INR'}}<br>
+percent :{{perfomance | percent}}<br>
+<input type="button" (mouseover)="printdata()" value="get my name"><br>
+<input type="button" (click)="getalluserinformation()" value="GET USERS HERE">
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>User name</th>
+        <th>Email</th>
+        </tr>
+        <tr *ngFor="let user of user">\
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+</table>
